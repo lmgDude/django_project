@@ -1,8 +1,9 @@
 from django.shortcuts import render
+from .models import *
 
 
 def main(request):
-    return render(request, )
+    return render(request, 'base/code404.html')
 
 
 def demand(request):
