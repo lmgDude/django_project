@@ -7,7 +7,7 @@ def main(request):
 
 
 def demand(request):
-    return render(request, )
+    return render(request, 'base/base.html')
 
 
 def geography(request):

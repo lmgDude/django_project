@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../static/base/css/base.css" />
+    <title>Специалист по информационной безопасности</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="name">
+                Специалист по информационной безопасности
+            </div>
+        </div>
+        <div class="menu">
+            <div class="menu-list">
+                <div class="logo">
+                    LMG
+                </div>
+                <ul class="list-item">
+                    <li class="item-list">
+                        <a class="link" href="{% url 'demand' %}">ВОСТРЕБОВАННОСТЬ</a>
+                    </li>
+                    <li class="item-list">
+                        <a class="link" href="{% url 'geography' %}">ГЕОГРАФИЯ</a>
+                    </li>
+                    <li class="item-list">
+                        <a class="link" href="{% url 'skills' %}">НАВЫКИ</a>
+                    </li>
+                    <li class="item-list">
+                        <a class="link" href="{% url 'last_vacancies' %}">ПОСЛЕДНИЕ<br>ВАКАНСИИ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div>
+                Тринц Илья Олегович РИ-210948
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
