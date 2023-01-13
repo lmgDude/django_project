@@ -1,6 +1,16 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+
+}
+
+body {
+    position: sticky;
 }
 
 ul {
@@ -10,4 +20,163 @@ ul {
 a {
     text-decoration: none;
     color: #1b1b1b;
+}
+
+@font-face {
+    font-family: "Chixa";
+    src: url(../font/Chixa.ttf) format("truetype");
+    font-style: normal;
+    font-display: swap;
+}
+
+.logo{
+    display: inline-block;
+    font-family: 'Chixa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 108px;
+    line-height: 108px;
+    background: linear-gradient(180deg, #F24405 0%, #FFCA28 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #000;
+    margin-left: 50px;
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+
+.name-h1 {
+    font-family: 'Chixa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 96px;
+    background: linear-gradient(180deg, #F24405 0%, #FFCA28 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #000;
+}
+
+.list-item {
+    display: inline-block;
+}
+
+.menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.menu {
+    display: inline-block;
+    position: sticky;
+    background: #BA90F2;
+    border: 5px solid #000000;
+    top: 0;
+    left: 0;
+    min-width: 280px;
+    height: 100vh;
+}
+
+.header-menu {
+    display: inline-block;
+}
+
+.name {
+    display: inline-block;
+    position: relative;
+    left: 140px;
+    top: 15px;
+}
+
+.header, .footer {
+    display: inline-block;
+    width: calc(100% - 90px);
+    height: 160px;
+    background: #BA90F2;
+    border: 2px solid #000000;
+    margin-bottom: 40px;
+    margin-left: 90px;
+}
+
+.footer {
+    margin-bottom: 0;
+}
+
+.footer-name {
+    display: inline-block;
+    position: relative;
+    font-family: 'Chixa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: #000000;
+    bottom: 70px;
+    left: 340px;
+}
+
+.main {
+    display: inline-block;
+    margin-left: 110px;
+    margin-bottom: 50px;
+    padding: 15px 15px 15px 20px;
+    background: #E286EA;
+    border: 2px solid #000000;
+    margin-right: 40px;
+}
+
+.main-content {
+    font-family: 'Chixa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #000000;
+}
+
+
+.two {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.all {
+    min-width: 800px;
+    padding: 0 0px;
+    margin: 0 auto;
+    background-image: url(../img/img-main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
+    background-attachment: fixed;
+}
+
+.item-list {
+   height: 120px;
+    font-family: 'Chixa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #000000;
+    border-top: 2px solid #000000;
+    padding-left: 40px;
+    padding-top: 45px;
+}
+
+.item-list:last-child {
+    border-bottom: 2px solid #000000;
+    padding-top: 30px;
+}
+
+.link:hover {
+    color: #FFCA28;
+}
+
+.img-mario {
+    display: inline-block;
+    margin-left: 60px;
 }

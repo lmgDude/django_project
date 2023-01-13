@@ -3,11 +3,11 @@ from .models import *
 
 
 def main(request):
-    return render(request, 'base/code404.html')
+    return render(request, 'base/base.html')
 
 
 def demand(request):
-    return render(request, 'base/base.html')
+    return render(request, )
 
 
 def geography(request):

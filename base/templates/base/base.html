@@ -4,51 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="../../static/base/css/base.css" />
+        {% load static %}
+    <link rel="stylesheet" href="{% static "base/css/base.css" %}">
     <title>Специалист по информационной безопасности</title>
 </head>
 <body>
-    <header>
-        <div class="header">
-            <div class="name">
-                Специалист по информационной безопасности
-            </div>
-        </div>
-        <div class="menu">
-            <div class="menu-list">
-                <div class="logo">
-                    LMG
+    <div class="all">
+        <div class="two">
+            <div class="menu">
+                <div class="menu-list">
+                    <div class="logo">
+                        <a href={% url 'home' %}>LMG</a>
+                    </div>
+                    <ul class="list-item">
+                        <li class="item-list">
+                            <a class="link" href="{% url 'demand' %}">ВОСТРЕБОВАННОСТЬ</a>
+                        </li>
+                        <li class="item-list">
+                            <a class="link" href="{% url 'geography' %}">ГЕОГРАФИЯ</a>
+                        </li>
+                        <li class="item-list">
+                            <a class="link" href="{% url 'skills' %}">НАВЫКИ</a>
+                        </li>
+                        <li class="item-list">
+                            <a class="link" href="{% url 'last_vacancies' %}">ПОСЛЕДНИЕ<br>ВАКАНСИИ</a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="list-item">
-                    <li class="item-list">
-                        <a class="link" href="{% url 'demand' %}">ВОСТРЕБОВАННОСТЬ</a>
-                    </li>
-                    <li class="item-list">
-                        <a class="link" href="{% url 'geography' %}">ГЕОГРАФИЯ</a>
-                    </li>
-                    <li class="item-list">
-                        <a class="link" href="{% url 'skills' %}">НАВЫКИ</a>
-                    </li>
-                    <li class="item-list">
-                        <a class="link" href="{% url 'last_vacancies' %}">ПОСЛЕДНИЕ<br>ВАКАНСИИ</a>
-                    </li>
-                </ul>
+            </div>
+
+            <div class="head-foot">
+                <div class="header">
+                    <div class="name">
+                        <h1 class="name-h1">nOpacity_V_Internet</h1>
+                    </div>
+                </div>
+
+                <div class="main">
+                    <div class="main-content">
+                        {% block content %}
+                        rg
+                        ttttt
+                        geography
+                        tgrwegfttttttttttttttttttttttttttttttgrwegftttttttttttttttttttttttttttt
+                        tretttttttttttttttttttttttttttttttttt
+                        geographyttttttttgrwtttttt
+                        tgrwegttttttttttttttgrwegftttttttttttttttttttttttttttt
+                        tretttttttgyyyyyyyyyyytt
+                        geography
+                        tgrwegftttttttttttttttttttttttttttftftftttgrwegftttttttttttttttttttttttttttt
+                        trettttttttttttttttttttttttttttttttttttttttttgrwegfttttttttttttttttttttttt
+                        geographyftttttttttttttttttttttttttttftftftttgrwegftttttttttttttttttttttttttttt
+                        trettttttttttttttttttttttttttttttttttttttttttgrwegfttttttttttttttttttttttt
+                        geography
+                        tft
+                        hhttttttgrwegftttttttttttttttttttttttttttftftftttgrwegftttttttttttttttttttttttttttt
+                        trettttttttttttttttttttttttttttttttttttttttttgrwegfttttttttttttttttttttttt
+                        geography
+                        tft
+                        hhttttttgrwegfttttttttttttttttttttttt
+                        gettttttgrwegfttttttttttttttttttttttttttttttttttttttttttt
+                        gettttttgrwegftttttttttttttttttttt
+                        tft
+                        hhttttttgrwegfttttttttttttttttttttttt
+                        gettttttgrwegfttttttttttttttttttttttt
+                        ge
+                        hughyfgtyu
+                        guyguyhgugtufv
+                        tgrwegfttttttttttttttttttttttttttttttgrwegftttttttttttttttttttttttttttt
+                        trettttttttttttttttttttttttttttgrwegfttttttttttttttttttttttt
+                        tgrwegfttttttttttttttttttttttttttttttgrwegfttttttttttttttttgrwegftttttttttttttttttttttttttttt
+                        trettttttttt
+                        geography
+                        tgrwegfttttttttttttttttttttttttttttttgrwegftttttttttttttttttttttttttttt
+                        trettttttttttttttttttttttttttttgrwegfttttttttttttttttttttttt
+                        tgrwegfttttttttttttttttttttttttttttttgrwegftttttttttttttttttttttttttttt
+                        tretttttttttttttttttttttttttttgrwegftttttttttttttttttttttttttttt
+                        trettttttttttttttttttttttttttttgr
+                        {% endblock %}
+                    </div>
+                </div>
+                <div class="footer">
+                    <!--<a onclick="new Audio({% static 'base\music\Redbone.mp3' %}).play(); return false;">-->
+                        <img class="img-mario" src={% static 'base\img\mario.png' %} alt="Марио" height="150px"
+                    width="150px">
+                    <!--</a>-->
+                    <div class="footer-name">
+                        Тринц Илья Олегович РИ-210948
+                    </div>
+                </div>
             </div>
         </div>
-    </header>
-
-    <main>
-        {% block content %}
-        {% endblock %}
-    </main>
-
-    <footer>
-        <div class="footer">
-            <div>
-                Тринц Илья Олегович РИ-210948
-            </div>
-        </div>
-    </footer>
+    </div>
+    <!--<script type="text/javascript">
+        audio = new Audio(<{ static 'base\music\Redbone.mp3' %});
+        play = false
+        function startAudio() {
+            if(play) {
+                audio.pause();
+                play = false;
+            }
+            else {
+                audio.play();
+                play = true;
+            }
+        }
+    </script>-->
 </body>
 </html>
