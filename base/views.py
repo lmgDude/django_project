@@ -3,11 +3,12 @@ from .models import *
 
 
 def main(request):
-    return render(request, 'base/base.html')
+    main_info = {'name': Profession.objects.last()}
+    return render(request, 'base/main.html', context=main_info)
 
 
 def demand(request):
-    return render(request, )
+    return render(request, 'base/demand.html')
 
 
 def geography(request):

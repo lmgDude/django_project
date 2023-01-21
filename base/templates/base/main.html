@@ -1,0 +1,11 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+    <h1 style="margin-bottom: 35px;">{{ name.name }}</h1>
+    <p>
+    {% autoescape off %}
+        <div style="margin-bottom: 25px;">{{ name.description|linebreaks }}</div>
+    {% endautoescape %}
+    </p>
+    <img src="{{ name.images.url }}">
+{% endblock %}
