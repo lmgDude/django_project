@@ -9,14 +9,17 @@ html {
 
 }
 
-th {
-    align-content: end;
-    font-weight: bolder;
-}
-
 .main-content img{
     width: 800px;
     border: 5px solid #000;
+}
+
+.main-content {
+
+}
+
+th {
+    text-align: center;
 }
 
 body {

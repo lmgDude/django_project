@@ -23,18 +23,17 @@ def demand(request):
 
 
 def geography(request):
-    return render(request, )
+    geography_info = {
+        'geography_salary_csv': pd.read_csv(Geography.objects.get(name='geography_salary').file_csv).to_html(index=False),
+        'geography_salary_png': Geography.objects.get(name='geography_salary').file_png,
+        'geography_vacancy_csv': pd.read_csv(Geography.objects.get(name='geography_vacancy').file_csv).to_html(index=False),
+        'geography_vacancy_png': Geography.objects.get(name='geography_vacancy').file_png,
+    }
+    return render(request, 'base/geograpy.html', context=geography_info)
 
 
 def skills(request):
-    """data_frame_skills = pd.DataFrame(columns=['skills', 'date'])
-    vacancies_list = list(Vacancies.objects.all())
-    vacancies_count = len(vacancies_list)
 
-    for vacancy in vacancies_list:
-        year = vacancy.datetime[:4]
-        if vacancy.skills != '':
-            data_frame_skills.loc[len(data_frame_skills.index)] = {'skills': vacancy.skills, 'date': year}"""
 
     return render(request, )
 

@@ -1,0 +1,13 @@
+{% extends 'base/base.html' %}
+
+
+{% block content %}
+    <div style="display: flex; flex-wrap: wrap;">
+        <div style="display: flex; flex-wrap: nowrap; margin-bottom: 10px;">
+            <div style="text-align: center; vertical-align: middle; width: 220px; margin-right: 50px;">
+                {{ geography_salary_csv|safe }}
+            </div>
+            <img style="height: 520px;width: 694px;" src="{{ geography_salary_png.url }}" alt="График зарплат">
+        </div>
+    </div>
+{% endblock %}

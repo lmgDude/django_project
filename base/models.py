@@ -45,3 +45,17 @@ class Demand(models.Model):
     class Meta:
         verbose_name = "Востребованность"
         verbose_name_plural = "Востребованности"
+
+
+class Geography(models.Model):
+    name = models.CharField(max_length=64, verbose_name='Название')
+    file_csv = models.FileField(upload_to='demand_csv/', verbose_name='Файл csv')
+    file_png = models.ImageField(upload_to='demand_png/', verbose_name='Файл png')
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = "География"
+        verbose_name_plural = "Географии"
+        db_table = 'geography'
