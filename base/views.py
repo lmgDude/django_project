@@ -24,18 +24,45 @@ def demand(request):
 
 def geography(request):
     geography_info = {
-        'geography_salary_csv': pd.read_csv(Geography.objects.get(name='geography_salary').file_csv).to_html(index=False),
+        'geography_salary_csv': pd.read_csv(Geography.objects.get(name='geography_salary').file_csv).to_html(
+            index=False),
         'geography_salary_png': Geography.objects.get(name='geography_salary').file_png,
-        'geography_vacancy_csv': pd.read_csv(Geography.objects.get(name='geography_vacancy').file_csv).to_html(index=False),
+        'geography_vacancy_csv': pd.read_csv(Geography.objects.get(name='geography_vacancy').file_csv).to_html(
+            index=False),
         'geography_vacancy_png': Geography.objects.get(name='geography_vacancy').file_png,
     }
     return render(request, 'base/geograpy.html', context=geography_info)
 
 
 def skills(request):
+    skills_info = {
+        '2015_csv': pd.read_csv(Skills.objects.get(name='2015').file_csv).to_html(
+            index=False),
+        '2015_png': Skills.objects.get(name='2015').file_png,
+        '2016_csv': pd.read_csv(Skills.objects.get(name='2016').file_csv).to_html(
+            index=False),
+        '2016_png': Skills.objects.get(name='2016').file_png,
+        '2017_csv': pd.read_csv(Skills.objects.get(name='2017').file_csv).to_html(
+            index=False),
+        '2017_png': Skills.objects.get(name='2017').file_png,
+        '2018_csv': pd.read_csv(Skills.objects.get(name='2018').file_csv).to_html(
+            index=False),
+        '2018_png': Skills.objects.get(name='2018').file_png,
+        '2019_csv': pd.read_csv(Skills.objects.get(name='2019').file_csv).to_html(
+            index=False),
+        '2019_png': Skills.objects.get(name='2019').file_png,
+        '2020_csv': pd.read_csv(Skills.objects.get(name='2020').file_csv).to_html(
+            index=False),
+        '2020_png': Skills.objects.get(name='2020').file_png,
+        '2021_csv': pd.read_csv(Skills.objects.get(name='2021').file_csv).to_html(
+            index=False),
+        '2021_png': Skills.objects.get(name='2021').file_png,
+        '2022_csv': pd.read_csv(Skills.objects.get(name='2022').file_csv).to_html(
+            index=False),
+        '2022_png': Skills.objects.get(name='2022').file_png
+    }
 
-
-    return render(request, )
+    return render(request, 'base/skills.html', context=skills_info)
 
 
 def last_vacancies(request):

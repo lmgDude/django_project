@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Profession, Vacancies, Demand, Geography
+from .models import Profession, Vacancies, Demand, Geography, Skills
 
 
 # Register your models here.
@@ -23,9 +23,13 @@ class GeographyAdmin(admin.ModelAdmin):
     search_fields = ('name', 'file_csv')
 
 
+class SkillsAdmin(admin.ModelAdmin):
+    list_display = ('name', 'file_csv')
+    search_fields = ('name', 'file_csv')
+
+
 admin.site.register(Profession, ProfessionAdmin)
 admin.site.register(Vacancies, VacanciesAdmin)
 admin.site.register(Demand, DemandAdmin)
 admin.site.register(Geography, GeographyAdmin)
-
-
+admin.site.register(Skills, SkillsAdmin)
