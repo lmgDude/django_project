@@ -1,0 +1,10 @@
+{% extends 'base/base.html' %}
+
+
+{% block content %}
+        <div style="display: flex; flex-wrap: nowrap; margin-bottom: 10px;">
+            <div style="text-align: center; vertical-align: middle; margin-right: 40px;">
+                {{ last_vacancies_csv|safe }}
+            </div>
+        </div>
+{% endblock %}
