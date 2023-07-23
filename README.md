@@ -11,4 +11,4 @@
 P.S. Присутствует мини-пасхалка с Марио
 
 `lmg.pythonanywhere.com`
-# LMG
+# Lomonoga
